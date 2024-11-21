@@ -1,0 +1,80 @@
+html {
+  box-sizing: content-box;
+}
+
+/* body{ */
+/* background-image: url("nghala.png"); */
+/* ? background-repeat: no-repeat; */
+
+header {
+  background-image: url(fire.jpg);
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  z-index: 5px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a button {
+  font-size: 25px;
+}
+
+button {
+  border: none;
+  padding-inline: 10px;
+  padding-block: 5px;
+  margin-top: 10px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(23, 188, 89, 0.9);
+  font-size: 20px;
+}
+
+.bgg-image {
+  background-image: url(nghala.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+@media screen and (max-width: 600px) {
+  .bgg-image {
+    background-image: url(nghala.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  a button {
+    font-size: 40px;
+  }
+}
