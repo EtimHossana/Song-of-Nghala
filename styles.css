@@ -5,6 +5,9 @@ html {
 /* body{ */
 /* background-image: url("nghala.png"); */
 /* ? background-repeat: no-repeat; */
+body {
+  background-color: black;
+}
 
 header {
   background-image: url(fire.jpg);
@@ -13,8 +16,14 @@ header {
   background-size: cover;
 }
 
-body {
-  background-color: black;
+
+
+.bgg-image {
+  background-image: url(nghala.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300vh;
 }
 
 h1 {
@@ -48,21 +57,11 @@ button {
   font-size: 20px;
 }
 
-.bgg-image {
-  background-image: url(nghala.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 1000px;
-}
+
 
 @media screen and (max-width: 600px) {
   .bgg-image {
-    background-image: url(nghala.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 150vh;
+    /* height: 150vh; */
   }
 
   .buttons {
