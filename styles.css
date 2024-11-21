@@ -1,38 +1,41 @@
-html {
-  box-sizing: content-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* body{ */
-/* background-image: url("nghala.png"); */
-/* ? background-repeat: no-repeat; */
 body {
   background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+/* Header */
 header {
-  background-image: url(fire.jpg);
+  background-image: url('fire.jpg');
   height: 100px;
   background-position: center;
   background-size: cover;
 }
 
-
-
+/* Background Image Section */
 .bgg-image {
-  background-image: url(nghala.png);
+  background-image: url('nghala.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 300vh;
 }
 
+/* Heading Styles */
 h1 {
-  z-index: 5px;
+  z-index: 5;
   color: white;
   text-align: center;
   padding-top: 30px;
 }
 
+/* Button Section */
 .buttons {
   display: flex;
   gap: 20px;
@@ -55,21 +58,24 @@ button {
   cursor: pointer;
   background-color: rgba(23, 188, 89, 0.9);
   font-size: 20px;
+  transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: rgba(23, 188, 89, 1); /* Slight hover effect */
+}
 
-
+/* Media Query for smaller screens */
 @media (max-width: 767px) {
-body {
+  body {
     overflow: hidden;
-}
+  }
 
   .bgg-image {
     height: 150vh;
   }
 
   .buttons {
-    display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
@@ -79,5 +85,10 @@ body {
 
   a button {
     font-size: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjusted for smaller screens */
+    padding-top: 20px;
   }
 }
