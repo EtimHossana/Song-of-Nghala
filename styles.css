@@ -65,11 +65,24 @@ button:hover {
   background-color: rgba(23, 188, 89, 1);
 }
 
+.register-link button {
+  background-color: #23bb59; /* Same as your button background */
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-link button:hover {
+  background-color: #1e9e4b; /* Darker shade on hover */
+}
+
+
 /* Media Query for smaller screens */
 @media (max-width: 767px) {
-  body {
-    overflow: hidden;
-  }
 
   .bgg-image {
     height: 150vh;
