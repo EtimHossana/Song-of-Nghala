@@ -67,7 +67,7 @@ button:hover {
 
 .register-link button {
   background-color: #23bb59; /* Same as your button background */
-  color: white;
+  color: black;
   border: none;
   font-size: 20px;
   padding: 10px 20px;
@@ -82,19 +82,13 @@ button:hover {
 
 
 /* Media Query for smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
 
   .bgg-image {
     height: 150vh;
   }
 
   button {
-    border: none;
-    padding-inline: 15px;
-    padding-block: 5px;
-    margin-top: 10px;
-    color: black;
-    border-radius: 5px;
     cursor: pointer;
     background-color: rgba(23, 188, 89, 0.9);
     font-size: 30px;
