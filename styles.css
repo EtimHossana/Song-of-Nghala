@@ -60,6 +60,10 @@ button {
 
 
 @media (max-width: 767px) {
+body {
+    overflow: hidden;
+}
+
   .bgg-image {
     height: 150vh;
   }
