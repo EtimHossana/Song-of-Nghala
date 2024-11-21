@@ -59,9 +59,9 @@ button {
 
 
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .bgg-image {
-    /* height: 150vh; */
+    height: 150vh;
   }
 
   .buttons {
