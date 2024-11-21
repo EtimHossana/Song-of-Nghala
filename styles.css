@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-  background-image: url('fire.jpg');
+  background-image: url("fire.jpg");
   height: 100px;
   background-position: center;
   background-size: cover;
@@ -20,7 +20,7 @@ header {
 
 /* Background Image Section */
 .bgg-image {
-  background-image: url('nghala.png');
+  background-image: url("nghala.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(23, 188, 89, 1); /* Slight hover effect */
+  background-color: rgba(23, 188, 89, 1);
 }
 
 /* Media Query for smaller screens */
@@ -73,6 +73,19 @@ button:hover {
 
   .bgg-image {
     height: 150vh;
+  }
+
+  button {
+    border: none;
+    padding-inline: 15px;
+    padding-block: 5px;
+    margin-top: 10px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(23, 188, 89, 0.9);
+    font-size: 30px;
+    transition: background-color 0.3s ease;
   }
 
   .buttons {
@@ -88,7 +101,7 @@ button:hover {
   }
 
   h1 {
-    font-size: 2.5rem; /* Adjusted for smaller screens */
+    font-size: 2.5rem;
     padding-top: 20px;
   }
 }
