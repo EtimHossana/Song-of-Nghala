@@ -22,9 +22,9 @@ header {
 .bgg-image {
   background-image: url("nghala.png");
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
   background-repeat: no-repeat;
-  height: 300vh;
+  height: 300vh; 
 }
 
 /* Heading Styles */
@@ -84,8 +84,11 @@ button:hover {
 /* Media Query for smaller screens */
 @media (max-width: 600px) {
 
-  .bgg-image {
-    height: 150vh;
+    .bgg-image {
+    background-size: contain; 
+    background-position: center center; 
+    height: auto; 
+    min-height: 100vh; 
   }
 
   button {
