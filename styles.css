@@ -59,7 +59,7 @@ button {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .bgg-image {
     height: 150vh;
   }
