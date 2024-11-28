@@ -1,42 +1,35 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 body {
-  background-color: black;
   margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Header */
-header {
-  background-image: url("fire.jpg");
-  height: 100px;
-  background-position: center;
+  background-image: url(images/nghala\ landing\ page.png);
+  background-position:center;
   background-size: cover;
-}
-
-/* Background Image Section */
-.bgg-image {
-  background-image: url("nghala.png");
-  background-position: center;
-  background-size: cover; 
   background-repeat: no-repeat;
-  height: 300vh; 
+  height: 100%vh;
 }
 
-/* Heading Styles */
-h1 {
-  z-index: 5;
-  color: white;
-  text-align: center;
-  padding-top: 30px;
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Button Section */
-.buttons {
+
+.snapShot img {
+ height:80px;
+ opacity: 0.9;
+}
+
+.churchLogo img {
+ height: 80px;
+ opacity: 0.9;
+
+}
+ .buttons {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -53,10 +46,11 @@ button {
   padding-inline: 10px;
   padding-block: 5px;
   margin-top: 10px;
-  color: black;
+  color: white;
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgba(23, 188, 89, 0.9);
+  background-color: black;
+  /* background-color: rgba(23, 188, 89, 0.9); */
   font-size: 20px;
   transition: background-color 0.3s ease;
 }
@@ -66,51 +60,114 @@ button:hover {
 }
 
 .register-link button {
-  background-color: #23bb59; /* Same as your button background */
-  color: black;
+  background-color: black;
+  color: white;
   border: none;
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+   transition:background-color 0.5s ease;
 }
 
 .register-link button:hover {
-  background-color: #1e9e4b; 
+  background-color: #1e9e4b;
+}
+
+.song {
+  font-size: 40px;
+  font-weight: 5rem;
+  text-shadow: 5px 5px 10px black;
+  line-height: 1rem;
+  text-align: center;
+  color: rgb(255, 254, 254);
+  width: fit-content;
+  margin:auto;
+}
+
+.song span {
+  line-height: 10rem;
+  display: block;
+  font-size: 10rem;
+  color: yellow;
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 40px;
+  font-style: normal;
+}
+
+.owner{
+  color: goldenrod;
+  margin-top: -18px;
+  font-size: 15px;
+  padding-right: 1.8rem;
+  text-align: center;
 }
 
 
-/* Media Query for smaller screens */
-@media (max-width: 600px) {
+.location p{
+  color: white;
+  text-align: center;
+  /* text-shadow: 10px 10px 30px black; */
+}
 
-  .bgg-image {
-    background-size: cover; 
-    background-position: center center; 
-    height: 100vh; 
+#prompt{
+  color: yellow;
+}
+
+
+@media (max-width: 500px) {
+
+  body{ 
+     margin: 0;
+  background-image: url(images/nghala\ landing\ page.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%vh;
   }
 
-  button {
-    cursor: pointer;
-    background-color: rgba(23, 188, 89, 0.9);
-    font-size: 30px;
-    transition: background-color 0.3s ease;
-  }
-
-  .buttons {
+  .buttons{
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    opacity: 0.8;
   }
 
-  a button {
-    font-size: 40px;
+  .song {
+  font-size: 40px;
+  font-weight: 4rem;
+  text-shadow: 10px 10px 10px black;
+  text-align: center;
+  color: white;
+  /* width: 100%; */
+  margin: 0;
   }
 
-  h1 {
-    font-size: 2.5rem;
-    padding-top: 20px;
+  .song span{
+    margin: 5px;
+    font-size: 5rem;
   }
+}
+
+.second{
+  background-image: none;
+  background-color: black;
+  background-position: center;
+  height: 100%;
+}
+
+.secondPage{
+  font-size: 30px;
+  text-align: center;
+  color:white;
+  background-color: black;
+  opacity: 0.5;
+  border: none;
+
+}
+
+.backToHome{
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  opacity: 0.5;
 }
